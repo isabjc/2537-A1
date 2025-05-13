@@ -1,0 +1,20 @@
+Criteria Marks
+The /admin page redirects to the /login page if not logged in. 5 marks
+The /admin page shows an error message if logged in, but not an admin 5 marks
+The /admin page shows a list of all users 5 marks
+The /admin page allows for promoting and demoting users to/from admin type
+(This is verified in the database)
+5 marks
+All pages use a CSS Framework like Bootstrap (or Tailwind)
+ You must incorporate a header, footer, responsive grid, forms, buttons.
+5 marks
+The site uses EJS as a templating engine 5 marks
+Common headers and footers are shared across all pages 5 marks
+Code used within loop is templated using EJS (ex: list of users in admin page) 5 marks
+The members page has a responsive grid of 3 images. 5 marks
+Your site is hosted on Render or other hosting site. 5 marks
+Note: You will receive a mark of 0 if your code doesn't run
+(i.e. too many errors to run properly, cannot connect to the database, etc.)!
+I will be running the code on your Render app, please make sure it is
+available until after you receive your marks!
+Total: 50 marks
