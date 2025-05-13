@@ -1,0 +1,28 @@
+<%-include('partials/header') %>
+
+  <div class="container-fluid px-3 px-sm-4 px-md-5 py-4 d-flex flex-column justify-content-center align-items-center min-vh-100">
+  <div class="text-center mb-5">
+
+    <!-- Greeting -->
+    <h1 class="mb-4">Hello, <%= user.username %>!</h1>
+
+    <!-- Image Grid -->
+    <div class="row justify-content-center w-100">
+      <% images.forEach(image => { %>
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+          <img src="/<%= image %>" alt="Responsive" class="img-fluid rounded shadow" style="max-width: 80%; height: auto;">
+        </div>
+      <% }); %>
+    </div>
+
+    <!-- Logout Button -->
+    <div class="text-center mt-4 w-100">
+      <a href="/logout" class="btn btn-danger w-sm-auto px-4 py-2">Logout</a>
+    </div>
+
+  </div>
+</div>
+
+
+
+  <%-include('partials/footer') %>

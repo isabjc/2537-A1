@@ -1,0 +1,32 @@
+<%-include('partials/header') %>
+
+<body class="bg-light">
+  <div class="container d-flex justify-content-center align-items-center vh-100">
+    <div class="card p-4 shadow-lg" style="width: 100%; max-width: 400px;">
+      <h4 class="mb-4 text-center">Login</h4>
+
+      <% if (errors && errors.length > 0) { %>
+            <div class="alert alert-danger">
+              <ul class="mb-0">
+                <% errors.forEach(error => { %>
+                  <li><%= error %></li>
+                <% }) %>
+              </ul>
+            </div>
+          <% } %>
+
+      <form action='/loggingin' method='post'>
+        <div class="mb-3">
+          <label for="email" class="form-label">Email address</label>
+          <input name = "email" type="email" class="form-control" id="email" placeholder="Enter email">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input name= "password" type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Login</button>
+      </form>
+    </div>
+  </div>
+
+  <%-include('partials/footer') %>
